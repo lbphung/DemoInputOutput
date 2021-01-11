@@ -10,7 +10,7 @@ export class AppComponent {
   QLTSInput = 'Quản Lý Tài Sản'
   QLTSOUT =['Chair','Table','Computer','Fan','Light'];
   addNewTS(qlts: string) {
-    console.log('pảent',qlts)
+    console.log('parent',qlts)
     this.QLTSOUT.push(qlts);
   }
 }

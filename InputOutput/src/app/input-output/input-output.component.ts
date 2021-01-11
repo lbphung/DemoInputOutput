@@ -8,10 +8,9 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class InputOutputComponent implements OnInit {
 
   @Input() QLTSIN:string;
-  @Output() Fish = new EventEmitter<string>();
-  addFish(value: string) {
-    console.log(value)
-    this.Fish.emit(value);
+  @Output() QLTSOUT = new EventEmitter<string>();
+  addTs(value: string) {
+    this.QLTSOUT.emit(value);
   }
   constructor() { }
 
